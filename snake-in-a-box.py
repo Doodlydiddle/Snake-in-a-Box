@@ -19,7 +19,6 @@ def snake(snake_stack, rem_nodes, removals):
         return max([snake(snake_stack + [node], rem_nodes, adj_nodes) for node in adj_nodes])
 
 
-
 def main():
     n = int(input("Enter dimension:   "))
     hypercube = hypercube_gen(n)
